@@ -9,7 +9,7 @@ Api.CHAT_COMPLETIONS_URL = "https://api.openai.com/v1/chat/completions"
 Api.EDITS_URL = "https://api.openai.com/v1/edits"
 
 -- API KEY
-Api.OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+Api.OPENAI_API_KEY = vim.env["OPENAI_API_KEY"]
 if not Api.OPENAI_API_KEY then
   error("OPENAI_API_KEY environment variable not set")
 end
